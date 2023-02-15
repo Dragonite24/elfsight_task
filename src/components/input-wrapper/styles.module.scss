@@ -1,0 +1,67 @@
+$border-width: 1px;
+
+.InputWrapper {
+  --border-color: var(--InputWrapper-border-color);
+  --text-color: var(--InputWrapper-text-color);
+  --label-color: var(--InputWrapper-label-color);
+  --label-bg-color: var(--InputWrapper-label-color-bg);
+
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  background: transparent;
+  border: $border-width solid var(--border-color);
+  border-radius: var(--border-radius-s);
+  color: var(--text-color);
+
+  &--hover:hover {
+    --border-color: var(--InputWrapper-border-color-hover);
+    --label-color: var(--InputWrapper-label-color-hover);
+  }
+
+  &--error {
+    --border-color: var(--InputWrapper-border-color-error);
+    --label-color: var(--InputWrapper-label-color-error);
+
+    &:hover {
+      --border-color: var(--InputWrapper-border-color-error-hover);
+      --label-color: var(--InputWrapper-label-color-error-hover);
+    }
+  }
+
+  &:focus-within {
+    --border-color: var(--InputWrapper-border-color-active);
+    --label-color: var(--InputWrapper-label-color-active);
+  }
+
+  &--disabled {
+    --border-color: var(--InputWrapper-border-color-disabled);
+    pointer-events: none;
+  }
+
+  &--opened {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &_label {
+    font-size: 10px;
+    line-height: 12px;
+    pointer-events: none;
+    height: 0;
+    opacity: 0;
+    padding: 0 var(--space-xxxs);
+    margin-left: var(--border-radius-s);
+
+    &-text {
+      font-size: 10px;
+      line-height: 12px;
+      position: absolute;
+      left: var(--border-radius-s);
+      top: -9px;
+      padding: 0 var(--space-xxxs);
+      color: var(--label-color);
+      background: var(--label-bg-color);
+    }
+  }
+}

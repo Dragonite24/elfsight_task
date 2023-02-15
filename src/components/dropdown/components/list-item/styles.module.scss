@@ -1,0 +1,21 @@
+.ListItem {
+  padding: var(--space-xxs) var(--space-xs);
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:focus-visible::before {
+    outline-offset: -1px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: #f0f2f3;
+  }
+
+  &[data-active="true"] {
+    background: #fbfcfc;
+  }
+}
