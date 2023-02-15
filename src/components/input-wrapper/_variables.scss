@@ -1,0 +1,41 @@
+:root {
+  --InputWrapper-label-color: var(--black-2);
+  --InputWrapper-label-color-bg: "transparent";
+  --InputWrapper-label-color-hover: var(--black-2);
+  --InputWrapper-label-color-active: var(--focus);
+  --InputWrapper-label-color-error: var(--red-2);
+  --InputWrapper-label-color-error-hover: var(--red-1);
+  --InputWrapper-label-color-disabled: var(--black-2);
+  --InputWrapper-border-color: var(--gray-4);
+  --InputWrapper-border-color-hover: var(--gray-3);
+  --InputWrapper-border-color-active: var(--focus);
+  --InputWrapper-border-color-disabled: var(--gray-5);
+  --InputWrapper-border-color-error: var(--red-2);
+  --InputWrapper-border-color-error-hover: var(--red-1);
+  --InputWrapper-error-color: var(--white);
+  --InputWrapper-error-color-bg: var(--red-2);
+  --InputWrapper-error-color-bg-hover: var(--red-2);
+  --InputWrapper-error-color-bg-active: var(--focus);
+  --InputWrapper-text-color: var(--black-1);
+  --InputWrapper-text-color-disabled: var(--black-1);
+
+  & [data-theme="dark"] {
+    --InputWrapper-label-color: var(--gray-2);
+    --InputWrapper-label-color-bg: "transparent";
+    --InputWrapper-label-color-hover: var(--gray-4);
+    --InputWrapper-label-color-active: var(--focus);
+    --InputWrapper-label-color-error: var(--red-2);
+    --InputWrapper-label-color-error-hover: var(--red-1);
+    --InputWrapper-label-color-disabled: var(--gray-2);
+    --InputWrapper-border-color: var(--gray-1);
+    --InputWrapper-border-color-hover: var(--gray-4);
+    --InputWrapper-border-color-active: var(--focus);
+    --InputWrapper-border-color-disabled: var(--dark-blue);
+    --InputWrapper-error-color: var(--white);
+    --InputWrapper-error-color-bg: var(--red-2);
+    --InputWrapper-error-color-bg-hover: var(--red-1);
+    --InputWrapper-error-color-bg-active: var(--focus);
+    --InputWrapper-text-color: var(--white);
+    --InputWrapper-text-color-disabled: var(--white);
+  }
+}

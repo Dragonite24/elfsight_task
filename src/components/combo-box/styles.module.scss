@@ -1,0 +1,46 @@
+.ComboBox {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+
+  &_content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: calc(var(--space-xxxs) - 1px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &_input {
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    padding: calc(var(--space-xxs) - 1px);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    background: transparent;
+
+    &::placeholder {
+      color: var(--black-2);
+    }
+
+    &:disabled {
+      background: transparent;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-grow: 1;
+      box-sizing: border-box;
+      min-width: 57px;
+      border-radius: var(--border-radius-s);
+
+      &--w-100 {
+        width: 100%;
+      }
+    }
+  }
+}
